@@ -9,7 +9,7 @@ jobs:
     environment: TestEnv
     defaults:
       run:
-        working-directory: './FirstDir/Prod'
+        working-directory: '../../FirstDir/Prod'
     permissions: 
      id-token: write
      contents: read
