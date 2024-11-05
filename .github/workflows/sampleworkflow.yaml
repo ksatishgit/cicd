@@ -11,7 +11,7 @@ jobs:
     environment: TestEnv
     defaults:
       run:
-        working-directory: '../../../FirstDir/Prod'
+        working-directory: '{{ GITHUB_WORKSPACE }}/FirstDir/Prod'
     permissions: 
      id-token: write
      contents: read
