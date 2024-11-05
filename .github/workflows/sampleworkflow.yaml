@@ -14,7 +14,7 @@ jobs:
     environment: TestEnv
     defaults:
       run:
-        working-directory: ${{ env:ROOT_PATH }}/FirstDir/Prod
+        working-directory: ${{ env.ROOT_PATH }}/FirstDir/Prod
     permissions: 
      id-token: write
      contents: read
