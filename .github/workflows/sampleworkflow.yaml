@@ -4,8 +4,7 @@ on:
   push:
     branches:
       - main
-env:
- ROOT_PATH: ${{ GITHUB_WORKSPACE }}
+
  
 jobs:
   build:
@@ -14,7 +13,7 @@ jobs:
     environment: TestEnv
     defaults:
       run:
-        working-directory: ${{ env.ROOT_PATH }}/FirstDir/Prod
+        working-directory: ./FirstDir/Prod
     permissions: 
      id-token: write
      contents: read
